@@ -25,10 +25,13 @@
      
      
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="<%= root_url %>">Accueil</a></li>
-        <li><a href="<%= pages_about_url %>">A propos</a></li>
+        
+        <li><%= link_to 'Accueil' , root_path %></li>
+        <li><%= link_to 'A propos' , pages_about_path %></li>
         <li><a href="#">Inscription</a></li>
         <li><a href="#">Connexion</a></li>
+        <li><%= link_to 'Proposer votre jardin' , paths_path, class: "btn btn-success btn-xs" %></li>
+        
 
       
       </ul>

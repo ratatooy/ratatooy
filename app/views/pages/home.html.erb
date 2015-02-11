@@ -3,6 +3,8 @@
 <div class="jumbotron">
   <h1>Bienvenue sur ratatooy</h1>
 <p class= "description">Trouvez un potager près de chez vous et cultivez vos propres légumes</p>
-  <p><a class="btn btn-success btn-lg" href="<%= pages_about_url %>" role="button">En savoir plus</a>
+  <p>
+  	<%= link_to 'A propos' , pages_about_path, class: "btn btn-primary" %>
+  	<%= link_to 'Proposer votre jardin' , paths_path, class: "btn btn-success" %>
   </p>
 </div>
